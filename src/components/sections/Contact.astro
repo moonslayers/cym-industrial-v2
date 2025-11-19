@@ -1,0 +1,95 @@
+---
+// Sección CONTACTO
+---
+
+<section id="contacto" class="py-20 px-0 bg-white">
+	<div class="max-w-6xl mx-auto px-8">
+		<div class="text-center mb-12">
+			<h2 class="text-4xl lg:text-5xl font-bold text-slate-700 mb-4">CONTACTO</h2>
+			<p class="text-xl text-gray-600">Estamos listos para ayudarte con tus proyectos industriales</p>
+		</div>
+		<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+			<div class="lg:col-span-2">
+				<div class="bg-gray-50 p-8 rounded-lg">
+					<h3 class="text-slate-700 text-2xl font-semibold mb-6">Envíanos un mensaje</h3>
+					<form>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<div class="mb-6">
+								<label for="name" class="block mb-2 text-slate-700 font-semibold">Nombre Completo</label>
+								<input type="text" id="name" name="name" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300">
+							</div>
+							<div class="mb-6">
+								<label for="email" class="block mb-2 text-slate-700 font-semibold">Email</label>
+								<input type="email" id="email" name="email" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300">
+							</div>
+							<div class="mb-6">
+								<label for="phone" class="block mb-2 text-slate-700 font-semibold">Teléfono</label>
+								<input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300">
+							</div>
+							<div class="mb-6">
+								<label for="company" class="block mb-2 text-slate-700 font-semibold">Empresa</label>
+								<input type="text" id="company" name="company" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300">
+							</div>
+							<div class="mb-6 md:col-span-2">
+								<label for="subject" class="block mb-2 text-slate-700 font-semibold">Asunto</label>
+								<input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300">
+							</div>
+							<div class="mb-6 md:col-span-2">
+								<label for="message" class="block mb-2 text-slate-700 font-semibold">Mensaje</label>
+								<textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300"></textarea>
+							</div>
+							<div class="md:col-span-2">
+								<button type="submit" class="w-full bg-red-500 text-white font-bold py-4 px-6 rounded-lg transition-colors duration-300 hover:bg-red-600">Enviar Mensaje</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="lg:col-span-1">
+				<div class="grid grid-cols-1 gap-6">
+					<div class="bg-gray-50 p-6 rounded-lg">
+						<h4 class="text-blue-500 text-xl font-semibold mb-4">Teléfono</h4>
+						<p class="text-slate-700 leading-relaxed mb-2">+1 234 567 890</p>
+						<p class="text-slate-700 leading-relaxed mb-0">+1 234 567 891</p>
+					</div>
+					<div class="bg-gray-50 p-6 rounded-lg">
+						<h4 class="text-blue-500 text-xl font-semibold mb-4">Email</h4>
+						<p class="text-slate-700 leading-relaxed mb-2">info@empresaindustrial.com</p>
+						<p class="text-slate-700 leading-relaxed mb-0">ventas@empresaindustrial.com</p>
+					</div>
+					<div class="bg-gray-50 p-6 rounded-lg">
+						<h4 class="text-blue-500 text-xl font-semibold mb-4">Dirección</h4>
+						<p class="text-slate-700 leading-relaxed mb-0">123 Calle Industrial</p>
+						<p class="text-slate-700 leading-relaxed mb-0">Ciudad, País</p>
+					</div>
+					<div class="bg-gray-50 p-6 rounded-lg">
+						<h4 class="text-blue-500 text-xl font-semibold mb-4">Horario de Atención</h4>
+						<p class="text-slate-700 leading-relaxed mb-2">Lunes - Viernes: 8:00 AM - 6:00 PM</p>
+						<p class="text-slate-700 leading-relaxed mb-2">Sábado: 9:00 AM - 1:00 PM</p>
+						<p class="text-slate-700 leading-relaxed mb-0">Emergencias: 24/7</p>
+					</div>
+					<div class="bg-gray-50 p-6 rounded-lg">
+						<h4 class="text-blue-500 text-xl font-semibold mb-4">Redes Sociales</h4>
+						<div class="flex flex-col gap-2">
+							<a href="#" class="text-blue-500 no-underline transition-colors duration-300 hover:text-blue-600">Facebook</a>
+							<a href="#" class="text-blue-500 no-underline transition-colors duration-300 hover:text-blue-600">LinkedIn</a>
+							<a href="#" class="text-blue-500 no-underline transition-colors duration-300 hover:text-blue-600">Instagram</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	// Manejo básico del formulario
+	document.addEventListener('DOMContentLoaded', () => {
+		const form = document.querySelector('form');
+
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			alert('Formulario de contacto - Esta es solo una demostración. En producción, esto enviaría los datos a un servidor.');
+		});
+	});
+</script>
