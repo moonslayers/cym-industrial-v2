@@ -1,0 +1,18 @@
+{
+  "name": "Empresa Industrial - Soluciones Industriales",
+  "short_name": "Empresa Industrial",
+  "description": "Proveedores líderes de soluciones industriales",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2c3e50",
+  "theme_color": "#3498db",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/android-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
