@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/sections/Hero.astro';
+---
+
+<Layout title="Test Hero Component">
+  <main>
+    <!-- Hero with default values -->
+    <section class="mb-20">
+      <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Hero con valores por defecto</h2>
+      <Hero
+        title="Título de Prueba"
+        description="Esta es una descripción de prueba para el componente Hero."
+      />
+    </section>
+
+    <!-- Hero without CTA -->
+    <section class="mb-20">
+      <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Hero sin CTA</h2>
+      <Hero
+        title="Hero Sin Botón"
+        description="Este Hero no muestra el botón de llamada a la acción."
+        showCTA={false}
+      />
+    </section>
+
+    <!-- Hero with different colors -->
+    <section class="mb-20">
+      <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Hero con colores diferentes</h2>
+      <Hero
+        title="Hero Azul"
+        titleHighlight="Personalizado"
+        description="Hero con gradiente azul y configuración personalizada."
+        backgroundGradient="bg-linear-to-br from-blue-900 to-blue-700"
+        ctaText="Contáctanos"
+        ctaHref="#contacto"
+      />
+    </section>
+
+    <!-- Hero without product image -->
+    <section class="mb-20">
+      <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Hero sin imagen de producto</h2>
+      <Hero
+        title="Hero Minimalista"
+        description="Este Hero no muestra la imagen del producto, solo el contenido de texto."
+        showProductImage={false}
+      />
+    </section>
+
+    <!-- Hero without animations -->
+    <section class="mb-20">
+      <h2 class="text-2xl font-bold text-center mb-10 text-gray-800">Hero sin animaciones</h2>
+      <Hero
+        title="Hero Estático"
+        titleHighlight="Sin Animar"
+        description="Este Hero no tiene animaciones para una carga más rápida."
+        enableAnimations={false}
+      />
+    </section>
+  </main>
+</Layout>
