@@ -1,0 +1,138 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "serie": "QRS 3-20",
+            "potencia_hp": "3-20",
+            "descripcion_corta": "Solución versátil y eficiente para operaciones de media escala, con opciones de configuración a su medida.",
+            "caracteristicas": [
+                "Secador integrado opcional",
+                "Disponible con o sin tanque de aire"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/1-VF-QRS-3-20.pdf"
+        },
+        {
+            "id": 2,
+            "serie": "QRS 20-30",
+            "potencia_hp": "20-30",
+            "descripcion_corta": "Mayor potencia y rendimiento con la misma flexibilidad de instalación, ideal para procesos en crecimiento.",
+            "caracteristicas": [
+                "Secador integrado opcional",
+                "Disponible con o sin tanque de aire"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/2-VF-QRS_20-30.pdf"
+        },
+        {
+            "id": 3,
+            "serie": "CPN 3-20",
+            "potencia_hp": "3-20",
+            "descripcion_corta": "Diseño compacto y montaje sobre tanque para ahorrar espacio sin sacrificar el rendimiento.",
+            "caracteristicas": [
+                "Diseño compacto",
+                "Montado sobre tanque"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/3-VF-CPN-3-20.pdf"
+        },
+        {
+            "id": 4,
+            "serie": "CPM 3-20",
+            "potencia_hp": "3-20",
+            "descripcion_corta": "Flexibilidad total de montaje, con la opción de integrar un secador para garantizar aire de alta calidad.",
+            "caracteristicas": [
+                "Secador integrado opcional",
+                "Montaje sobre base o tanque"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/4-VF-CPM-3-20_Y_CPM-21-40.pdf"
+        },
+        {
+            "id": 5,
+            "serie": "CPM 21-40",
+            "potencia_hp": "21-40",
+            "descripcion_corta": "Potencia superior con un diseño silencioso, perfecto para entornos de trabajo donde el ruido es un factor crítico.",
+            "caracteristicas": [
+                "Diseño silencioso",
+                "Alta potencia"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/4-VF-CPM-3-20_Y_CPM-21-40.pdf"
+        },
+        {
+            "id": 6,
+            "serie": "CPA 7,5-15",
+            "potencia_hp": "7,5-15",
+            "descripcion_corta": "Equilibrio perfecto entre potencia y tamaño, con opciones de montaje adaptadas a sus necesidades de espacio.",
+            "caracteristicas": [
+                "Montaje sobre tanque o base",
+                "Rango de potencia eficiente"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/5-VF-CPA-7_5-15.pdf"
+        },
+        {
+            "id": 7,
+            "serie": "CPBG 20-50",
+            "potencia_hp": "20-50",
+            "descripcion_corta": "Eficiencia y confiabilidad de primer nivel, construido con tecnología de engranajes robusta y motores premium.",
+            "caracteristicas": [
+                "Alta eficiencia energética",
+                "Tecnología de engranajes robusta",
+                "Motores de eficiencia premium"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/6-VF-CPBG-20-50.pdf"
+        },
+        {
+            "id": 8,
+            "serie": "CPC 40-60",
+            "potencia_hp": "40-60",
+            "descripcion_corta": "Rendimiento superior garantizado por su accionamiento por engranajes y componentes de la más alta calidad.",
+            "caracteristicas": [
+                "Accionamiento por engranajes",
+                "Tornillos rotativos premium"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/7-VF-CPE-30-110.pdf"
+        },
+        {
+            "id": 9,
+            "serie": "CPD 75-100",
+            "potencia_hp": "75-100",
+            "descripcion_corta": "La solución ideal para operaciones con altas demandas de aire, diseñado para ofrecer un flujo constante y fiable.",
+            "caracteristicas": [
+                "Accionamiento por engranajes",
+                "Ideal para altas demandas"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/7-VF-CPE-30-110.pdf"
+        },
+        {
+            "id": 10,
+            "serie": "CPE 100-150",
+            "potencia_hp": "100-150",
+            "descripcion_corta": "Potencia y durabilidad para los trabajos más demandantes de la industria, asegurando continuidad en su producción.",
+            "caracteristicas": [
+                "Accionamiento por engranajes",
+                "Ideal para trabajos demandantes"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/7-VF-CPE-30-110.pdf"
+        },
+        {
+            "id": 11,
+            "serie": "CPF 180-420",
+            "potencia_hp": "180-420",
+            "descripcion_corta": "Máxima eficiencia energética y potencia para aplicaciones a gran escala. La inversión inteligente para su operación.",
+            "caracteristicas": [
+                "Motor de última generación",
+                "Eficiencia energética superior",
+                "Para aplicaciones demandantes"
+            ],
+            "cta_texto": "Ver Ficha Técnica",
+            "cta_link": "/public/pdfs/8-VF-CPF180-420.pdf"
+        }
+    ]
+}
