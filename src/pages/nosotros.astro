@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/sections/Hero.astro';
+import Services from '../components/sections/Services.astro';
+import About from '../components/sections/About.astro';
+---
+
+<Layout title="Empresa Industrial - Soluciones Industriales">
+	<Navbar />
+	<main>
+		<Hero
+			title="Nuestra Línea de"
+			titleHighlight="Compresores Industriales"
+			description="Descubra nuestra completa gama de compresores diseñados para ofrecer máxima eficiencia y durabilidad en aplicaciones industriales."
+			sectionId="productos"
+			ctaText="Consultar por productos"
+			ctaHref="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20de%20compresores"
+			backgroundImage="/producto_1_compresor.jpg"
+			productImage="/compresor_hero.png"
+			showCTA={true}
+			showProductImage={true}
+			showBackgroundImage={true}
+			enableAnimations={true}
+		/>
+        <About></About>
+	</main>
+	<Footer />
+</Layout>

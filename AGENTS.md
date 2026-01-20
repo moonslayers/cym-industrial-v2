@@ -21,6 +21,7 @@ Use these skills for detailed patterns on-demand:
 
 | Skill | Description | URL |
 |-------|-------------|-----|
+| `cym-ui` | CYM Industrial UI patterns (index section) | [SKILL.md](skills/cym-ui/SKILL.md) |
 | `skill-creator` | Create new AI agent skills | [SKILL.md](skills/skill-creator/SKILL.md) |
 
 ### Auto-invoke Skills
