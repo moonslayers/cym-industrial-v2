@@ -1,0 +1,81 @@
+---
+import ProductCard from '../ProductCard.astro';
+// Servicios Detalle Section
+---
+
+<section id="servicios-detalle" class="py-20 px-0 bg-gray-100">
+	<div class="max-w-6xl mx-auto px-8">
+		<div class="text-center mb-12">
+			<h2 class="text-4xl lg:text-5xl font-bold text-slate-700 mb-4">Algunos de nuestros servicios principales:</h2>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<ProductCard
+				title="Auditoría de Energía"
+				description="Los estudios de demanda de aire nos permiten saber la interacción de los equipos instalados con la demanda de la planta"
+				image="/servicios/Auditoria-de-Energia.jpg"
+				imageAlt="Auditoría de Energía CYM Industrial"
+				ctaText="Solicitar Auditoría"
+				ctaHref="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20sobre%20auditoria%20de%20energia"
+			/>
+
+			<ProductCard
+				title="Estudio de Calidad de Energía"
+				description="Este nos proporciona información de la alimentación eléctrica, puntos importantes para asegurar el correcto funcionamiento de los compresores. (Se recomienda 1 estudio por año)"
+				image="/servicios/Estudio-de-Calidad-de-Energia.jpg"
+				imageAlt="Estudio de Calidad de Energía CYM Industrial"
+				ctaText="Agendar Estudio"
+				ctaHref="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20agendar%20un%20estudio%20de%20calidad%20de%20energia"
+			/>
+
+			<ProductCard
+				title="Análisis de Rodamiento"
+				description="Este análisis permite determinar el estado de la pista y los rodamientos se consideran (se recomienda 4 estudios por año.)"
+				image="/servicios/Analisis-de-Rodamiento.jpg"
+				imageAlt="Análisis de Rodamiento CYM Industrial"
+				ctaText="Solicitar Análisis"
+				ctaHref="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20sobre%20analisis%20de%20rodamiento"
+			/>
+
+			<ProductCard
+				title="Analizador de Punto de Rocío"
+				description="Este análisis sirve para conocer el buen funcionamiento de tu sistema de tratamiento."
+				image="/servicios/Medidor-de-punto-de-rocio.png"
+				imageAlt="Analizador de Punto de Rocío CYM Industrial"
+				ctaText="Agendar Análisis"
+				ctaHref="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20sobre%20analizador%20de%20punto%20de%20rocio"
+			/>
+		</div>
+	</div>
+</section>
+
+<style>
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.grid > :nth-child(1) {
+		animation: fadeInUp 0.8s ease-out forwards;
+	}
+
+	.grid > :nth-child(2) {
+		animation: fadeInUp 0.8s ease-out 0.2s forwards;
+		opacity: 0;
+	}
+
+	.grid > :nth-child(3) {
+		animation: fadeInUp 0.8s ease-out 0.4s forwards;
+		opacity: 0;
+	}
+
+	.grid > :nth-child(4) {
+		animation: fadeInUp 0.8s ease-out 0.6s forwards;
+		opacity: 0;
+	}
+</style>

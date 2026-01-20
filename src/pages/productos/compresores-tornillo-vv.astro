@@ -2,13 +2,150 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
-import ProductGrid from '../../components/sections/ProductGrid.astro';
+import CompressorCard from '../../components/CompressorCard.astro';
 ---
 
 <Layout title="Compresores de Tornillo VV - CYM Industrial">
-    <Navbar />
-    <main>
+	<Navbar />
+	<main>
+		<section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-red-900 to-red-700">
+			<div class="absolute inset-0 bg-red-800/50 backdrop-blur-sm"></div>
+			<div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
+				<div class="text-white space-y-6 animate-fadeInUp">
+					<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+						Compresores de Tornillo Velocidad Variable
+					</h1>
+					<p class="text-xl text-gray-300 leading-relaxed max-w-3xl">
+						CYMIndustrial ofrece compresores de aire de velocidad variable de alta calidad en diferentes versiones y tamaños. Elija la solución que mejor se ajusta a su requerimiento de aire comprimido.
+					</p>
+					<a
+						href="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20sobre%20compresores%20de%20tornillo%20VV"
+						target="_blank"
+						class="inline-flex items-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+					>
+						<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+						</svg>
+						<span>Pregunte por nuestros Compresores de Velocidad Variable</span>
+					</a>
+				</div>
+			</div>
+		</section>
 
-    </main>
-    <Footer />
+		<section class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-6 lg:px-8">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					<div class="relative group">
+						<div class="absolute inset-0 bg-red-500/10 blur-3xl rounded-full scale-125 group-hover:scale-150 transition-transform duration-500"></div>
+						<img
+							src="/compresores tornillos velocidad variable/CPVSD-1050.png"
+							alt="Compresor de Tornillo Velocidad Variable"
+							class="relative w-full rounded-2xl shadow-2xl"
+						/>
+					</div>
+					<div class="space-y-8">
+						<div>
+							<span class="inline-block px-4 py-2 bg-red-900/30 border border-red-500/20 rounded-full text-red-500 text-sm font-semibold mb-4">
+								VELOCIDAD VARIABLE
+							</span>
+							<h2 class="text-3xl lg:text-4xl font-bold text-slate-800">
+								COMPRESOR DE TORNILLO CPVSd 10-50
+							</h2>
+						</div>
+						<p class="text-gray-600 leading-relaxed text-lg">
+							Los compresores de tornillo de velocidad variable ajustan la velocidad del motor en función de la presión del sistema, para suplir con la demanda de aire de su línea de producción, minimizando el consumo de energía (nada de caídas de presión drásticas, nada de picos de energía elevados).
+						</p>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+							<div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+								<span class="text-emerald-500 mt-1 flex-shrink-0">✓</span>
+								<span class="text-gray-700">Ajuste automático de velocidad del motor</span>
+							</div>
+							<div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+								<span class="text-emerald-500 mt-1 flex-shrink-0">✓</span>
+								<span class="text-gray-700">Minimiza el consumo de energía</span>
+							</div>
+							<div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+								<span class="text-emerald-500 mt-1 flex-shrink-0">✓</span>
+								<span class="text-gray-700">Evita caídas de presión drásticas</span>
+							</div>
+							<div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+								<span class="text-emerald-500 mt-1 flex-shrink-0">✓</span>
+								<span class="text-gray-700">Elimina picos de energía elevados</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-20 bg-gray-100">
+			<div class="max-w-7xl mx-auto px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-4">
+						Explore nuestro rango de compresores de tornillo de velocidad variable
+					</h2>
+					<p class="text-xl text-gray-600">
+						Seleccione el modelo que mejor se adapte a sus necesidades
+					</p>
+				</div>
+
+				<div class="compressor-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<CompressorCard
+						title="CPVSd 10-50"
+						description="Compresor de tornillo rotativo de velocidad variable, disponible de 10-50HP y con accionamiento directo."
+						image="/compresores tornillos velocidad variable/CPVSD-1050.png"
+						imageAlt="CPVSd 10-50"
+						pdfUrl="/compresores tornillos velocidad variable/pdfs/1-CPVSd-10-50.pdf"
+					/>
+
+					<CompressorCard
+						title="CPVS 60-100"
+						description="Compresor de tornillo rotativo de velocidad variable, con motor de magneto permanente altamente eficiente. Disponibles de 60-100HP."
+						image="/compresores tornillos velocidad variable/CPVS-60-100.png"
+						imageAlt="CPVS 60-100"
+						pdfUrl="/compresores tornillos velocidad variable/pdfs/2-CPVS-60-100.pdf"
+					/>
+
+					<CompressorCard
+						title="CPVS 100-150"
+						description="Compresor de tornillo rotativo de velocidad variable. Disponible de 100 a 150 HP."
+						image="/compresores tornillos velocidad variable/CPE-100-150.png"
+						imageAlt="CPVS 100-150"
+						pdfUrl="/compresores tornillos velocidad variable/pdfs/3-CPVS-100-150.pdf"
+					/>
+
+					<CompressorCard
+						title="CPVS 180-420"
+						description="Compresor de tornillo rotativo de velocidad variable. Disponible de 180 a 420 HP."
+						image="/compresores tornillos velocidad variable/CPF-180-420.png"
+						imageAlt="CPVS 180-420"
+						pdfUrl="/compresores tornillos velocidad variable/pdfs/3-CPVS-100-150.pdf"
+					/>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
 </Layout>
+
+<style>
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.animate-fadeInUp {
+		animation: fadeInUp 0.8s ease-out forwards;
+	}
+
+	.compressor-grid > :nth-child(1) { animation: fadeInUp 0.8s ease-out forwards; }
+	.compressor-grid > :nth-child(2) { animation: fadeInUp 0.8s ease-out 0.1s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(3) { animation: fadeInUp 0.8s ease-out 0.2s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(4) { animation: fadeInUp 0.8s ease-out 0.3s forwards; opacity: 0; }
+</style>

@@ -2,28 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-import Hero from '../components/sections/Hero.astro';
-import Services from '../components/sections/Services.astro';
+import ServiciosHero from '../components/sections/ServiciosHero.astro';
+import ServiciosDetalle from '../components/sections/ServiciosDetalle.astro';
+import MantenimientoBanner from '../components/sections/MantenimientoBanner.astro';
 ---
 
-<Layout title="Empresa Industrial - Soluciones Industriales">
+<Layout title="CYM Industrial - Servicios">
 	<Navbar />
 	<main>
-		<Hero
-			title="Nuestra Línea de"
-			titleHighlight="Compresores Industriales"
-			description="Descubra nuestra completa gama de compresores diseñados para ofrecer máxima eficiencia y durabilidad en aplicaciones industriales."
-			sectionId="productos"
-			ctaText="Consultar por productos"
-			ctaHref="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20de%20compresores"
-			backgroundImage="/producto_1_compresor.jpg"
-			productImage="/compresor_hero.png"
-			showCTA={true}
-			showProductImage={true}
-			showBackgroundImage={true}
-			enableAnimations={true}
-		/>
-        <Services></Services>
+		<ServiciosHero />
+		<ServiciosDetalle />
+		<MantenimientoBanner />
 	</main>
 	<Footer />
 </Layout>
