@@ -1,0 +1,126 @@
+---
+interface Product {
+    title: string;
+    model: string;
+    description: string;
+    image: string;
+    imageAlt: string;
+    href: string;
+}
+
+const products: Product[] = [
+    {
+        title: "Compresores de Tornillo VF",
+        model: "QRS 25",
+        description: "Compresores de velocidad fija de alta eficiencia para aplicaciones industriales. Rendimiento confiable y bajo consumo energético.",
+        image: "/productos/Compresores-de-Tornillo-VF-3.png",
+        imageAlt: "Compresor de Tornillo Velocidad Fija QRS 25",
+        href: "/productos/compresores-tornillo-vf"
+    },
+    {
+        title: "Compresores de Tornillo VV",
+        model: "CPV5 - 220",
+        description: "Compresores de velocidad variable con tecnología inverter. Ahorro energético inteligente adapts a la demanda.",
+        image: "/productos/Compresores-de-Tornillo-VV-2.png",
+        imageAlt: "Compresor de Tornillo Velocidad Variable CPV5-220",
+        href: "/productos/compresores-tornillo-vv"
+    },
+    {
+        title: "Tratamiento de Aire",
+        model: "Secadores y Filtración",
+        description: "Sistemas completos de tratamiento de aire: secadores frigoríficos, secadores por regeneración, filtros y separadores.",
+        image: "/productos/Tratamiento-de-Aire-OK.png",
+        imageAlt: "Sistema de Tratamiento de Aire",
+        href: "/productos/tratamiento-aire"
+    }
+];
+---
+
+<section id="productos" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-4">
+                PRODUCTOS DISPONIBLES
+            </h2>
+            <p class="text-xl text-gray-600">
+                Encuentra la solución perfecta para tu sistema de aire comprimido
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {products.map((product) => (
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-gray-100">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center relative overflow-hidden">
+                        <img
+                            src={product.image}
+                            alt={product.imageAlt}
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                        />
+                        <div class="absolute top-4 right-4 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-full">
+                            {product.model}
+                        </div>
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-xl font-bold text-slate-800 leading-tight">
+                            {product.title}
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            {product.description}
+                        </p>
+
+                        <a
+                            href={product.href}
+                            class="inline-flex items-center gap-2 w-full justify-center px-4 py-3 bg-emerald-500 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                            <span>Ver Detalles</span>
+                        </a>
+                    </div>
+                </div>
+            ))}
+        </div>
+
+        <div class="mt-16 text-center">
+            <a
+                href="https://api.whatsapp.com/send?phone=526643108937&text=PREGUNTE%20POR%20NUESTROS%20PRODUCTOS"
+                target="_blank"
+                class="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold text-lg rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl shadow-red-500/25"
+            >
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+                </svg>
+                <span>PREGUNTE POR NUESTROS PRODUCTOS</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .grid > :nth-child(1) {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .grid > :nth-child(2) {
+        animation: fadeInUp 0.8s ease-out 0.2s forwards;
+        opacity: 0;
+    }
+
+    .grid > :nth-child(3) {
+        animation: fadeInUp 0.8s ease-out 0.4s forwards;
+        opacity: 0;
+    }
+</style>
