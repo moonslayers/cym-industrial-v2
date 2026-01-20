@@ -2,74 +2,213 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
-import ProductGrid from '../../components/sections/ProductGrid.astro';
+import CompressorCard from '../../components/CompressorCard.astro';
 ---
 
 <Layout title="Compresores de Tornillo VF - CYM Industrial">
-    <Navbar />
-    <main>
-        <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-red-900 to-red-700">
-            <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
-                <div class="text-white space-y-6">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                        Compresores de Tornillo Velocidad Fija
-                    </h1>
-                    <p class="text-xl text-gray-300 leading-relaxed max-w-3xl">
-                        Compresores de alta eficiencia para aplicaciones industriales con demanda constante. Rendimiento confiable y bajo consumo energético.
-                    </p>
-                </div>
-            </div>
-        </section>
+	<Navbar />
+	<main>
+		<section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-red-900 to-red-700">
+			<div class="absolute inset-0 bg-red-800/50 backdrop-blur-sm"></div>
+			<div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
+				<div class="text-white space-y-6 animate-fadeInUp">
+					<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+						Compresores de Tornillo Velocidad Fija
+					</h1>
+					<p class="text-xl text-gray-300 leading-relaxed max-w-3xl">
+						Compresores de alta eficiencia para aplicaciones industriales con demanda constante. Rendimiento confiable y bajo consumo energético.
+					</p>
+					<a
+						href="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20sobre%20compresores%20de%20tornillo%20VF"
+						target="_blank"
+						class="inline-flex items-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+					>
+						<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+						</svg>
+						<span>Solicitar Cotización</span>
+					</a>
+				</div>
+			</div>
+		</section>
 
-        <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <img
-                            src="/productos/Compresores-de-Tornillo-VF-3.png"
-                            alt="Compresor de Tornillo Velocidad Fija"
-                            class="w-full rounded-xl shadow-lg"
-                        />
-                    </div>
-                    <div class="space-y-6">
-                        <h2 class="text-3xl font-bold text-slate-800">
-                            Modelo QRS 25
-                        </h2>
-                        <p class="text-gray-600 leading-relaxed">
-                            Los compresores de velocidad fija son ideales para operaciones donde la demanda de aire es constante. Ofrecen:
-                        </p>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-500 mt-1">✓</span>
-                                <span>Alta eficiencia energética en operación continua</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-500 mt-1">✓</span>
-                                <span>Construcción robusta para ambientes industriales</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-500 mt-1">✓</span>
-                                <span>Bajo mantenimiento y larga vida útil</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="text-emerald-500 mt-1">✓</span>
-                                <span>Fácil operación y control</span>
-                            </li>
-                        </ul>
-                        <a
-                            href="https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20sobre%20compresores%20de%20tornillo%20VF"
-                            target="_blank"
-                            class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-all duration-300"
-                        >
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
-                            </svg>
-                            Solicitar Cotización
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <Footer />
+		<section class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-6 lg:px-8">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					<div class="relative group">
+						<div class="absolute inset-0 bg-red-500/10 blur-3xl rounded-full scale-125 group-hover:scale-150 transition-transform duration-500"></div>
+						<img
+							src="/productos/Compresores-de-Tornillo-VF-3.png"
+							alt="Compresor de Tornillo Velocidad Fija"
+							class="relative w-full rounded-2xl shadow-2xl"
+						/>
+					</div>
+					<div class="space-y-8">
+						<div>
+							<span class="inline-block px-4 py-2 bg-red-900/30 border border-red-500/20 rounded-full text-red-500 text-sm font-semibold mb-4">
+								VELIDAD FIJA
+							</span>
+							<h2 class="text-3xl lg:text-4xl font-bold text-slate-800">
+								Modelo QRS 25
+							</h2>
+						</div>
+						<p class="text-gray-600 leading-relaxed text-lg">
+							Los compresores de velocidad fija son ideales para operaciones donde la demanda de aire es constante. Ofrecen:
+						</p>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+							<div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+								<span class="text-emerald-500 mt-1 flex-shrink-0">✓</span>
+								<span class="text-gray-700">Alta eficiencia energética en operación continua</span>
+							</div>
+							<div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+								<span class="text-emerald-500 mt-1 flex-shrink-0">✓</span>
+								<span class="text-gray-700">Construcción robusta para ambientes industriales</span>
+							</div>
+							<div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+								<span class="text-emerald-500 mt-1 flex-shrink-0">✓</span>
+								<span class="text-gray-700">Bajo mantenimiento y larga vida útil</span>
+							</div>
+							<div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+								<span class="text-emerald-500 mt-1 flex-shrink-0">✓</span>
+								<span class="text-gray-700">Fácil operación y control</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-20 bg-gray-100">
+			<div class="max-w-7xl mx-auto px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-4">
+						Línea de Productos
+					</h2>
+					<p class="text-xl text-gray-600">
+						Seleccione el modelo que mejor se adapte a sus necesidades
+					</p>
+				</div>
+
+				<div class="compressor-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<CompressorCard
+						title="QRS 3-20"
+						description="Compresor de tornillo rotativo de 3-20HP con secador integrado opcional y con o sin tanque de aire."
+						image="/compresores tornillos velocidad fija/QRS-3-0.png"
+						imageAlt="QRS 3-20"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/1-VF-QRS-3-20.pdf"
+					/>
+
+					<CompressorCard
+						title="QRS 20-30"
+						description="Compresor de tornillo rotativo de 20-30HP con secador integrado opcional y con o sin tanque de aire."
+						image="/compresores tornillos velocidad fija/QRS-25.png"
+						imageAlt="QRS 20-30"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/2-VF-QRS_20-30.pdf"
+					/>
+
+					<CompressorCard
+						title="CPN 3-20"
+						description="Compresor de tornillo rotativo de 3-20HP con diseño compacto y montado sobre tanque."
+						image="/compresores tornillos velocidad fija/CPN-320.png"
+						imageAlt="CPN 3-20"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/3-VF-CPN-3-20.pdf"
+					/>
+
+					<CompressorCard
+						title="CPM 3-20"
+						description="Compresor de tornillo rotativo de 3-20HP con secador integrado opcional y montado sobre base ó sobre tanque."
+						image="/compresores tornillos velocidad fija/CPM-15-2.png"
+						imageAlt="CPM 3-20"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/4-VF-CPM-3-20_Y_CPM-21-40.pdf"
+					/>
+
+					<CompressorCard
+						title="CPM 21-40"
+						description="Compresor de tornillo rotativo de 21-40HP con diseño silencioso."
+						image="/compresores tornillos velocidad fija/CPM21.png"
+						imageAlt="CPM 21-40"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/4-VF-CPM-3-20_Y_CPM-21-40.pdf"
+					/>
+
+					<CompressorCard
+						title="CPA 7,5-15"
+						description="Compresor de tornillo rotativo de 7,5-15HP, montado sobre tanque ó sobre base."
+						image="/compresores tornillos velocidad fija/CPA-7515.png"
+						imageAlt="CPA 7,5-15"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/5-VF-CPA-7_5-15.pdf"
+					/>
+
+					<CompressorCard
+						title="CPBG 20-50"
+						description="La serie CPBG ofrece una alta eficiencia y gran confiabilidad gracias a su nuevo elemento combinado con tecnología de engranajes robusta y motores de eficiencia premium. Disponible de 20-50HP."
+						image="/compresores tornillos velocidad fija/CPBG-2050.png"
+						imageAlt="CPBG 20-50"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/6-VF-CPBG-20-50.pdf"
+					/>
+
+					<CompressorCard
+						title="CPC 40-60"
+						description="Compresor de tornillo rotativo de 40-60HP, con accionamiento por engranajes y tornillos rotativos premium."
+						image="/compresores tornillos velocidad fija/CPC-40.png"
+						imageAlt="CPC 40-60"
+						disabled
+					/>
+
+					<CompressorCard
+						title="CPD 75-100"
+						description="Compresor de tornillo rotativo accionado por engranajes, ideal para altas demandas de aire comprimido. Disponible de 75-100HP."
+						image="/compresores tornillos velocidad fija/CPD-75.png"
+						imageAlt="CPD 75-100"
+						disabled
+					/>
+
+					<CompressorCard
+						title="CPE 100-150"
+						description="Compresor de tornillo rotativo accionado por engranajes, e ideal para trabajos demandantes. Disponible de 100-150HP."
+						image="/compresores tornillos velocidad fija/CPE-100-150.png"
+						imageAlt="CPE 100-150"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/7-VF-CPE-30-110.pdf"
+					/>
+
+					<CompressorCard
+						title="CPF 180-420"
+						description="Compresor de tornillo rotativo de 180-420HP, ideal para aplicaciones demandantes, y eficiente energéticamente gracias a su motor de última generación."
+						image="/compresores tornillos velocidad fija/CPF-180-420.png"
+						imageAlt="CPF 180-420"
+						pdfUrl="/compresores tornillos velocidad fija/pdfs/11-VF-CPF180-420.pdf"
+					/>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
 </Layout>
+
+<style>
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.animate-fadeInUp {
+		animation: fadeInUp 0.8s ease-out forwards;
+	}
+
+	.compressor-grid > :nth-child(1) { animation: fadeInUp 0.8s ease-out forwards; }
+	.compressor-grid > :nth-child(2) { animation: fadeInUp 0.8s ease-out 0.1s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(3) { animation: fadeInUp 0.8s ease-out 0.2s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(4) { animation: fadeInUp 0.8s ease-out 0.3s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(5) { animation: fadeInUp 0.8s ease-out 0.4s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(6) { animation: fadeInUp 0.8s ease-out 0.5s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(7) { animation: fadeInUp 0.8s ease-out 0.6s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(8) { animation: fadeInUp 0.8s ease-out 0.7s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(9) { animation: fadeInUp 0.8s ease-out 0.8s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(10) { animation: fadeInUp 0.8s ease-out 0.9s forwards; opacity: 0; }
+	.compressor-grid > :nth-child(11) { animation: fadeInUp 0.8s ease-out 1.0s forwards; opacity: 0; }
+</style>

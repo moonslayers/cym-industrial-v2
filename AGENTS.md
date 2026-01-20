@@ -31,6 +31,7 @@ When performing these actions, ALWAYS invoke the corresponding skill FIRST:
 | Action | Skill |
 |--------|-------|
 | After creating/modifying a skill|`skill-sync`|
+| Creating, updating UI |`cym-ui`|
 
 ---
 

@@ -1,0 +1,56 @@
+---
+interface CompressorCardProps {
+	title: string;
+	description: string;
+	image: string;
+	imageAlt: string;
+	pdfUrl?: string;
+	disabled?: boolean;
+}
+
+const {
+	title,
+	description,
+	image,
+	imageAlt,
+	pdfUrl,
+	disabled = false
+} = Astro.props;
+---
+
+<div class="group bg-red-600 rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative">
+	<div class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+	<div class="relative p-6 flex items-center justify-center bg-white/10 min-h-[200px]">
+		<img
+			src={image}
+			alt={imageAlt}
+			class="max-w-full max-h-[180px] object-contain transition-transform duration-500 group-hover:scale-110"
+		/>
+	</div>
+	<div class="relative p-6 text-white space-y-4">
+		<h3 class="text-2xl font-bold text-center">{title}</h3>
+		<p class="text-red-100 text-sm leading-relaxed text-center">{description}</p>
+		{disabled ? (
+			<button
+				disabled
+				class="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-white/30 text-white/50 font-semibold rounded-lg cursor-not-allowed"
+			>
+				<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+					<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM9 12l1.5 1.5L13 11v5h2v-5l2.5 2.5L18 12l-4.5-4.5L9 12z"/>
+				</svg>
+				Ver PDF
+			</button>
+		) : pdfUrl ? (
+			<a
+				href={pdfUrl}
+				target="_blank"
+				class="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-red-600 transition-all duration-300 transform hover:scale-105"
+			>
+				<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+					<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM9 12l1.5 1.5L13 11v5h2v-5l2.5 2.5L18 12l-4.5-4.5L9 12z"/>
+				</svg>
+				Ver PDF
+			</a>
+		) : null}
+	</div>
+</div>
