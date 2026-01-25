@@ -1,0 +1,578 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  ctaText?: string;
+  ctaHref?: string;
+}
+
+const {
+  title = 'CYM Industrial',
+  subtitle = 'Compresores de Aire',
+  description = 'Venta de compresores de aire industriales y servicio de mantenimiento y renta de máquinas',
+  ctaText = 'Contactar por WhatsApp',
+  ctaHref = 'https://api.whatsapp.com/send?phone=526643108937&text=Quiero%20informacion%20de%20sus%20productos%20y%20servicios'
+} = Astro.props;
+---
+
+<section
+  id="inicio"
+  class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950"
+>
+  <!-- Animated Mesh Gradient Background -->
+  <div class="absolute inset-0">
+    <div class="mesh-gradient"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Tech decorative elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <!-- Circuit lines -->
+    <div class="circuit-line circuit-line-1"></div>
+    <div class="circuit-line circuit-line-2"></div>
+    <div class="circuit-line circuit-line-3"></div>
+    
+    <!-- Data points -->
+    <div class="data-point data-point-1"></div>
+    <div class="data-point data-point-2"></div>
+    <div class="data-point data-point-3"></div>
+    
+    <!-- Tech circles -->
+    <div class="tech-circle tech-circle-1"></div>
+    <div class="tech-circle tech-circle-2"></div>
+  </div>
+
+  <!-- Main content container -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+      
+      <!-- Text content -->
+      <div class="text-white space-y-8 order-2 lg:order-1">
+        <!-- Badge -->
+        <div class="badge-appear">
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-red-900/40 backdrop-blur-sm border border-red-500/30 rounded-full text-amber-400 text-sm font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></span>
+            Soluciones Industriales
+          </span>
+        </div>
+
+        <!-- Title with gradient -->
+        <div class="title-appear">
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none mb-2">
+            {title}
+          </h1>
+          <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold gradient-text">
+            {subtitle}
+          </h2>
+        </div>
+
+        <!-- Description -->
+        <div class="description-appear">
+          <p class="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-xl">
+            {description}
+          </p>
+        </div>
+
+        <!-- Technical specs -->
+        <div class="specs-appear flex flex-wrap gap-4 text-sm text-gray-400">
+          <div class="flex items-center gap-2">
+            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+            Alta Eficiencia
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+            24/7 Soporte
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+            Certificación ISO
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="cta-appear">
+          <a
+            href={ctaHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-bold text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/30 overflow-hidden"
+          >
+            <!-- Gradient border effect -->
+            <div class="absolute inset-0 bg-gradient-to-r from-amber-400/50 via-emerald-500/50 to-amber-400/50 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
+            
+            <!-- Button content -->
+            <div class="relative flex items-center gap-3">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+              </svg>
+              <span>{ctaText}</span>
+              <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product image with tech effects -->
+      <div class="relative order-1 lg:order-2 image-container">
+        <!-- Background glow -->
+        <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 via-red-600/10 to-transparent blur-3xl rounded-full"></div>
+        
+        <!-- Tech frame -->
+        <div class="relative z-10 tech-frame">
+          <!-- Corner decorations -->
+          <div class="corner-decoration corner-tl"></div>
+          <div class="corner-decoration corner-tr"></div>
+          <div class="corner-decoration corner-bl"></div>
+          <div class="corner-decoration corner-br"></div>
+
+          <!-- Scan lines overlay -->
+          <div class="scan-lines"></div>
+
+          <!-- Image -->
+          <img
+            src="/compresor_hero.png"
+            alt="Compresor Industrial CYM"
+            class="relative z-20 w-full max-w-xl lg:max-w-2xl mx-auto object-contain"
+          />
+
+          <!-- Tech overlay elements -->
+          <div class="tech-overlay">
+            <div class="tech-indicator tech-indicator-1">
+              <div class="tech-indicator-line"></div>
+              <div class="tech-indicator-dot"></div>
+              <div class="tech-indicator-label">Power Unit</div>
+            </div>
+            <div class="tech-indicator tech-indicator-2">
+              <div class="tech-indicator-line"></div>
+              <div class="tech-indicator-dot"></div>
+              <div class="tech-indicator-label">Compressor</div>
+            </div>
+            <div class="tech-indicator tech-indicator-3">
+              <div class="tech-indicator-line"></div>
+              <div class="tech-indicator-dot"></div>
+              <div class="tech-indicator-label">Control Panel</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating elements -->
+        <div class="floating-card floating-card-1 glass-card">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs text-gray-400 uppercase tracking-wider">Power</div>
+              <div class="text-white font-bold">High Performance</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card-2 glass-card">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-emerald-500/20 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs text-gray-400 uppercase tracking-wider">Quality</div>
+              <div class="text-white font-bold">ISO Certified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-dot"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Mesh Gradient Animation */
+  @keyframes meshGradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .mesh-gradient {
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(at 40% 20%, rgba(127, 29, 29, 0.8) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(185, 28, 28, 0.6) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(220, 38, 38, 0.7) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(153, 27, 27, 0.5) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(239, 68, 68, 0.6) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, rgba(220, 38, 38, 0.4) 0px, transparent 50%);
+    background-size: 200% 200%;
+    animation: meshGradient 15s ease infinite;
+  }
+
+  /* Noise Overlay */
+  @keyframes noise {
+    0%, 100% { background-position: 0 0; }
+    10% { background-position: -5% -10%; }
+    20% { background-position: -15% 5%; }
+    30% { background-position: 7% -25%; }
+    40% { background-position: -5% 25%; }
+    50% { background-position: -15% 10%; }
+    60% { background-position: 15% 0%; }
+    70% { background-position: 0% 15%; }
+    80% { background-position: 3% 35%; }
+    90% { background-position: -10% 10%; }
+  }
+
+  .noise-overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    animation: noise 0.2s steps(10) infinite;
+  }
+
+  /* Circuit Lines */
+  .circuit-line {
+    position: absolute;
+    background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.3), transparent);
+    height: 1px;
+  }
+
+  .circuit-line-1 {
+    width: 300px;
+    top: 20%;
+    left: 10%;
+    transform: rotate(-15deg);
+    animation: circuitPulse 4s ease-in-out infinite;
+  }
+
+  .circuit-line-2 {
+    width: 400px;
+    top: 60%;
+    right: 10%;
+    transform: rotate(25deg);
+    animation: circuitPulse 4s ease-in-out 1s infinite;
+  }
+
+  .circuit-line-3 {
+    width: 250px;
+    top: 40%;
+    left: 5%;
+    transform: rotate(-30deg);
+    animation: circuitPulse 4s ease-in-out 2s infinite;
+  }
+
+  @keyframes circuitPulse {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.6; }
+  }
+
+  /* Data Points */
+  .data-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(251, 191, 36, 0.6);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+  }
+
+  .data-point-1 {
+    top: 15%;
+    right: 20%;
+    animation: dataPulse 2s ease-in-out infinite;
+  }
+
+  .data-point-2 {
+    top: 70%;
+    left: 15%;
+    animation: dataPulse 2s ease-in-out 0.5s infinite;
+  }
+
+  .data-point-3 {
+    bottom: 25%;
+    right: 30%;
+    animation: dataPulse 2s ease-in-out 1s infinite;
+  }
+
+  @keyframes dataPulse {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.5); opacity: 1; }
+  }
+
+  /* Tech Circles */
+  .tech-circle {
+    position: absolute;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 50%;
+  }
+
+  .tech-circle-1 {
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    right: 5%;
+    animation: techCircleRotate 30s linear infinite;
+  }
+
+  .tech-circle-2 {
+    width: 300px;
+    height: 300px;
+    bottom: 10%;
+    left: 5%;
+    animation: techCircleRotate 25s linear infinite reverse;
+  }
+
+  @keyframes techCircleRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 25%, #f59e0b 50%, #ef4444 75%, #dc2626 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease-in-out infinite;
+  }
+
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% center; }
+    50% { background-position: 100% center; }
+  }
+
+  /* Tech Frame */
+  .tech-frame {
+    position: relative;
+    padding: 20px;
+    background: rgba(31, 41, 55, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    overflow: hidden;
+  }
+
+  /* Corner Decorations */
+  .corner-decoration {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(251, 191, 36, 0.5);
+  }
+
+  .corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; border-radius: 16px 0 0 0; }
+  .corner-tr { top: -1px; right: -1px; border-left: none; border-bottom: none; border-radius: 0 16px 0 0; }
+  .corner-bl { bottom: -1px; left: -1px; border-right: none; border-top: none; border-radius: 0 0 0 16px; }
+  .corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; border-radius: 0 0 16px 0; }
+
+  /* Scan Lines */
+  .scan-lines {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.1) 2px,
+      rgba(0, 0, 0, 0.1) 4px
+    );
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.3;
+  }
+
+  /* Tech Overlay */
+  .tech-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 15;
+  }
+
+  .tech-indicator {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .tech-indicator-line {
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(251, 191, 36, 0.8), transparent);
+  }
+
+  .tech-indicator-dot {
+    width: 6px;
+    height: 6px;
+    background: rgba(251, 191, 36, 0.8);
+    border-radius: 50%;
+    animation: indicatorPulse 2s ease-in-out infinite;
+  }
+
+  .tech-indicator-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(251, 191, 36, 0.8);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .tech-indicator-1 { top: 30%; right: 15%; }
+  .tech-indicator-2 { top: 50%; left: 10%; }
+  .tech-indicator-3 { bottom: 30%; right: 20%; }
+
+  @keyframes indicatorPulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+
+  /* Glass Card */
+  .glass-card {
+    position: absolute;
+    padding: 12px 16px;
+    background: rgba(31, 41, 55, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .floating-card {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .floating-card-1 {
+    top: 10%;
+    right: 5%;
+    animation-delay: 0s;
+  }
+
+  .floating-card-2 {
+    bottom: 20%;
+    left: 0%;
+    animation-delay: 2s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Scroll Indicator */
+  .scroll-indicator {
+    width: 24px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    position: relative;
+  }
+
+  .scroll-indicator-dot {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 8px;
+    background: rgba(251, 191, 36, 0.8);
+    border-radius: 2px;
+    animation: scrollIndicatorBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollIndicatorBounce {
+    0%, 100% { top: 6px; opacity: 1; }
+    50% { top: 22px; opacity: 0.3; }
+  }
+
+  /* Entry Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .badge-appear {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+
+  .title-appear {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+    opacity: 0;
+  }
+
+  .description-appear {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    opacity: 0;
+  }
+
+  .specs-appear {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+    opacity: 0;
+  }
+
+  .cta-appear {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+    opacity: 0;
+  }
+
+  /* Image Container Animation */
+  .image-container {
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+    opacity: 0;
+  }
+
+  /* Parallax Effect on Scroll */
+  @keyframes parallaxFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .tech-frame img {
+    transition: transform 0.5s ease-out;
+  }
+
+  .tech-frame:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .tech-circle-1 { width: 250px; height: 250px; }
+    .tech-circle-2 { width: 200px; height: 200px; }
+    .floating-card-1 { right: 10%; top: 5%; }
+    .floating-card-2 { left: 5%; bottom: 15%; }
+  }
+
+  @media (max-width: 640px) {
+    .circuit-line { display: none; }
+    .tech-circle { display: none; }
+    .floating-card { display: none; }
+    .tech-indicator { display: none; }
+  }
+</style>
