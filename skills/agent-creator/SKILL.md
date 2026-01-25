@@ -46,13 +46,6 @@ Follow the structure from existing agents:
 - Include validation rules and success criteria
 - Use code blocks for templates
 
-### Reference Existing Agents
-
-When creating new agents, study these examples:
-- `log-simple-reporter.md` - Simple, focused transformation agent
-- `log-fancy-reporter.md` - Complex, multi-step agent with strict rules
-- `whatsapp-formatter.md` - Formatting agent for specific output
-
 ## Code Examples
 
 ### Simple Agent Template
