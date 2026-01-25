@@ -2,16 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-import Hero from '../components/sections/Hero.astro';
-import Services from '../components/sections/Services.astro';
-import About from '../components/sections/About.astro';
+import HeroNosotros from '../components/sections/HeroNosotros.astro';
+import EquiposGallery from '../components/sections/EquiposGallery.astro';
+import ProcesoTimeline from '../components/sections/ProcesoTimeline.astro';
 ---
 
-<Layout title="Empresa Industrial - Soluciones Industriales">
+<Layout title="Nosotros - CYM Industrial">
 	<Navbar />
 	<main>
-
-        <About></About>
+		<HeroNosotros />
+		<EquiposGallery />
+		<ProcesoTimeline />
 	</main>
 	<Footer />
 </Layout>

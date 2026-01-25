@@ -1,0 +1,66 @@
+---
+const isInlineScript = false;
+---
+
+<style define:vars={{ isInlineScript }}>
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.hero-title {
+		animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+	}
+
+	.hero-description {
+		animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+		opacity: 0;
+	}
+
+	.glow-effect {
+		animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+		opacity: 0;
+	}
+</style>
+
+<section id="nosotros" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-red-900 to-red-700">
+	<div class="absolute inset-0 bg-amber-500/10 blur-3xl rounded-full scale-125 opacity-30"></div>
+
+	<div class="absolute inset-0">
+		<img
+			src="/nosotros/nosotros-hero.png"
+			alt="Fondo Nosotros"
+			class="w-full h-full object-cover"
+		/>
+	</div>
+
+	<div class="absolute inset-0 bg-gradient-to-br from-red-900/90 to-red-700/85 backdrop-blur-sm"></div>
+
+	<div class="relative max-w-5xl mx-auto px-6 lg:px-8 w-full text-center">
+		<div class="glow-effect mb-6">
+			<div class="inline-block">
+				<span class="px-6 py-2 bg-red-500/20 border border-red-500/30 rounded-full text-red-200 text-sm font-semibold uppercase tracking-wider">
+					Sobre Nosotros
+				</span>
+			</div>
+		</div>
+
+		<h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8 drop-shadow-lg">
+			Compresores y mantenimiento industrial
+		</h1>
+
+		<div class="hero-description max-w-3xl mx-auto">
+			<p class="text-lg sm:text-xl md:text-2xl text-gray-100 leading-relaxed font-medium">
+				Somos una compañía familiar establecida en <span class="text-amber-300 font-semibold">Tijuana Baja California</span> con alcance a Rosarito, Ensenada y Tecate. Nuestros productos y servicios están enfocados al ramo industrial, venta y reparación de compresores industriales y equipos de tratamiento de aire, siendo distribuidores de la marca reconocida internacionalmente <span class="text-amber-300 font-semibold">CHICAGO PNEUMATIC</span>.
+			</p>
+		</div>
+	</div>
+
+	<div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-red-900/50 to-transparent pointer-events-none"></div>
+</section>
