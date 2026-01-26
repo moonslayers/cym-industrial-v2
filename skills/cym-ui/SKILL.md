@@ -6,8 +6,8 @@ description: >
 license: Apache-2.0
 metadata:
   author: prowler-cloud
-  version: "2.0"
-  scope: [ui]
+  version: "3.0"
+  scope: [root]
   auto_invoke: "Working with index section UI"
 allowed-tools: Read, Edit, Write, Glob, Grep, Bash, WebFetch, WebSearch, Task
 ---
@@ -32,20 +32,6 @@ border-red-500/20, border-red-500/30
 text-amber-400 (#fbbf24) - Textos secundarios, iconos
 bg-amber-500/10
 bg-amber-500 (#f59e0b) - Botones secundarios, gradientes
-
-<!-- Premium Gold Accents -->
-bg-[#D4A017] - Acentos premium, líneas decorativas
-hover:bg-[#B8940F] - Hover states premium
-bg-[#9A7800] - Acentos oscuros premium
-```
-
-### Custom Premium Colors
-```html
-<!-- Premium Red/Brown Scale -->
-bg-[#8B0000] - Dark Red (fondo Hero Premium)
-bg-[#722F37] - Merlot (gradiente Hero Premium)
-bg-[#5D1E1E] - Dark Brown (gradiente Hero Premium)
-text-[#FAFAF9] - Off-White (texto Hero Premium)
 ```
 
 ### Action Colors (Emerald)
@@ -60,11 +46,9 @@ hover:bg-emerald-700
 ```html
 <!-- Hero sections -->
 bg-linear-to-br from-red-900 to-red-700
-bg-gradient-to-br from-[#8B0000] via-[#722F37] to-[#5D1E1E]
 
 <!-- Products section -->
 bg-gray-100
-bg-[#F8F5F0] - Warm Gray (fondo minimalist)
 
 <!-- Benefits section -->
 bg-gradient-to-b from-gray-900 to-gray-950
@@ -77,7 +61,6 @@ bg-gray-950 (#030712) - Fondo oscuro tech
 <!-- Cards/Overlays -->
 bg-red-500/20
 bg-red-900/30
-bg-[#FAFAF9] - Off-white backgrounds
 ```
 
 ### Typography Colors
@@ -90,7 +73,6 @@ text-gray-400
 <!-- Dark/Gray backgrounds -->
 text-slate-700
 text-gray-600
-text-[#0F172A] - Slate Dark (texto minimalist)
 text-red-300 (highlights)
 ```
 
@@ -222,16 +204,24 @@ gap-8, gap-12
     id="inicio"
     class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950"
 >
-    <!-- Mesh gradient background -->
+    <!-- Mesh gradient background (6 layers) -->
     <div class="absolute inset-0 overflow-hidden">
         <div class="absolute inset-0 opacity-100 animate-[meshGradient_15s_ease_infinite]" style="background-image: 
             radial-gradient(at 40% 20%, rgba(127, 29, 29, 0.8) 0px, transparent 50%),
             radial-gradient(at 80% 0%, rgba(185, 28, 28, 0.6) 0px, transparent 50%),
-            radial-gradient(at 0% 50%, rgba(220, 38, 38, 0.6) 0px, transparent 50%),
-            radial-gradient(at 80% 50%, rgba(127, 29, 29, 0.7) 0px, transparent 50%),
-            radial-gradient(at 0% 100%, rgba(185, 28, 28, 0.8) 0px, transparent 50%),
-            radial-gradient(at 80% 100%, rgba(220, 38, 38, 0.6) 0px, transparent 50%);
+            radial-gradient(at 0% 50%, rgba(220, 38, 38, 0.7) 0px, transparent 50%),
+            radial-gradient(at 80% 50%, rgba(153, 27, 27, 0.5) 0px, transparent 50%),
+            radial-gradient(at 0% 100%, rgba(239, 68, 68, 0.6) 0px, transparent 50%),
+            radial-gradient(at 80% 100%, rgba(220, 38, 38, 0.4) 0px, transparent 50%);
+            background-size: 200% 200%;
         "></div>
+    </div>
+
+    <!-- Tech decorative elements -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-20 left-10 w-64 h-64 border border-red-500/10 rounded-full"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 border border-red-500/10 rounded-full"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-red-500/5 rounded-full"></div>
     </div>
 
     <!-- Content with glass effect -->
@@ -255,71 +245,22 @@ gap-8, gap-12
 </section>
 ```
 
-### Hero Section (Premium)
-```html
-<section
-    id="inicio"
-    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#8B0000] via-[#722F37] to-[#5D1E1E]"
->
-    <!-- Premium gold accents -->
-    <div class="absolute top-0 right-0 w-96 h-96 bg-[#D4A017]/10 blur-3xl rounded-full"></div>
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#D4A017]/10 blur-3xl rounded-full"></div>
-
-    <!-- Content -->
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="text-[#FAFAF9] space-y-8">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
-                    Premium <span class="text-[#D4A017]">Gold</span>
-                </h1>
-                <p class="text-xl text-gray-300">Description</p>
-                <!-- CTA with gold border -->
-                <a href="#" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#D4A017] to-[#B8940F] hover:from-[#B8940F] hover:to-[#9A7800] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#D4A017]/25 border border-[#D4A017]/30">
-                    <svg class="w-6 h-6">...</svg>
-                    <span>Button Text</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-```
-
-### Hero Section (Minimalist)
-```html
-<section
-    id="inicio"
-    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#F8F5F0]"
->
-    <!-- Clean content with slate dark text -->
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="text-[#0F172A] space-y-8">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
-                    Minimalist <span class="text-red-600">Design</span>
-                </h1>
-                <p class="text-xl text-gray-600">Description</p>
-                <!-- Simple CTA -->
-                <a href="#" class="inline-flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105">
-                    <svg class="w-6 h-6">...</svg>
-                    <span>Button Text</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-```
-
 ### Hero Section (Products3DTilt)
 ```html
 <section
     id="inicio"
     class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950"
 >
-    <!-- Mesh gradient -->
+    <!-- Mesh gradient (6 layers) -->
     <div class="absolute inset-0 overflow-hidden">
         <div class="absolute inset-0 opacity-100 animate-[meshGradient_15s_ease_infinite]" style="background-image: 
             radial-gradient(at 40% 20%, rgba(127, 29, 29, 0.8) 0px, transparent 50%),
-            radial-gradient(at 80% 0%, rgba(185, 28, 28, 0.6) 0px, transparent 50%);
+            radial-gradient(at 80% 0%, rgba(185, 28, 28, 0.6) 0px, transparent 50%),
+            radial-gradient(at 0% 50%, rgba(220, 38, 38, 0.7) 0px, transparent 50%),
+            radial-gradient(at 80% 50%, rgba(153, 27, 27, 0.5) 0px, transparent 50%),
+            radial-gradient(at 0% 100%, rgba(239, 68, 68, 0.6) 0px, transparent 50%),
+            radial-gradient(at 80% 100%, rgba(220, 38, 38, 0.4) 0px, transparent 50%);
+            background-size: 200% 200%;
         "></div>
     </div>
 
@@ -333,39 +274,68 @@ gap-8, gap-12
                 <p class="text-xl text-gray-300">Description</p>
             </div>
             <!-- 3D tilt product showcase -->
-            <div class="relative perspective-1000">
-                <div class="transform-style-3d rotate-y-12 rotate-x-6 transition-transform duration-700 hover:rotate-y-0 hover:rotate-x-0">
+            <div class="perspective-container relative">
+                <div class="tilt-card transform-style-3d transition-transform duration-700 ease-out" data-tilt>
                     <img src="/path/to/image" class="w-full max-w-2xl mx-auto object-contain" />
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    // 3D Tilt Effect
+    document.querySelectorAll('.tilt-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = ((y - centerY) / centerY) * -10;
+            const rotateY = ((x - centerX) / centerX) * 10;
+            card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'rotateX(0) rotateY(0)';
+        });
+    });
+</script>
 ```
 
-### Hero Section (ProductsHorizontal)
+### Hero Section (HeroNosotros)
 ```html
 <section
-    id="inicio"
+    id="nosotros"
     class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950"
 >
-    <!-- Animated gradient background -->
-    <div class="absolute inset-0 animate-gradientBackground" style="background: 
-        linear-gradient(135deg, #ef4444 0%, #dc2626 25%, #f59e0b 50%, #ef4444 75%, #dc2626 100%);
-        background-size: 200% auto;
-        animation: gradientShift 3s ease-in-out infinite;
-    "></div>
+    <!-- Mesh gradient (6 layers) -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute inset-0 opacity-100 animate-[meshGradient_15s_ease_infinite]" style="background-image: 
+            radial-gradient(at 40% 20%, rgba(127, 29, 29, 0.8) 0px, transparent 50%),
+            radial-gradient(at 80% 0%, rgba(185, 28, 28, 0.6) 0px, transparent 50%),
+            radial-gradient(at 0% 50%, rgba(220, 38, 38, 0.7) 0px, transparent 50%),
+            radial-gradient(at 80% 50%, rgba(153, 27, 27, 0.5) 0px, transparent 50%),
+            radial-gradient(at 0% 100%, rgba(239, 68, 68, 0.6) 0px, transparent 50%),
+            radial-gradient(at 80% 100%, rgba(220, 38, 38, 0.4) 0px, transparent 50%);
+            background-size: 200% 200%;
+        "></div>
+    </div>
 
-    <!-- Horizontal product showcase -->
+    <!-- Content -->
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8 w-full z-10">
-        <div class="text-white space-y-8 mb-12">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold animate-gradientText">
-                Horizontal <span class="text-amber-400">Showcase</span>
-            </h1>
-        </div>
-        <!-- Horizontal scroll or grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Product cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white space-y-8">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
+                    Nosotros <span class="text-amber-400">CYM Industrial</span>
+                </h1>
+                <p class="text-xl text-gray-300">Description</p>
+                <!-- CTA -->
+                <a href="#" class="inline-flex items-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-emerald-500/25">
+                    <svg class="w-6 h-6">...</svg>
+                    <span>Button Text</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -523,6 +493,14 @@ gap-8, gap-12
         animation: meshGradient 15s ease infinite;
     }
 </style>
+
+<!-- IMPORTANT: Mesh gradient must use exactly 6 layers -->
+<!-- Layer 1: rgba(127, 29, 29, 0.8) at 40% 20% -->
+<!-- Layer 2: rgba(185, 28, 28, 0.6) at 80% 0% -->
+<!-- Layer 3: rgba(220, 38, 38, 0.7) at 0% 50% -->
+<!-- Layer 4: rgba(153, 27, 27, 0.5) at 80% 50% -->
+<!-- Layer 5: rgba(239, 68, 68, 0.6) at 0% 100% -->
+<!-- Layer 6: rgba(220, 38, 38, 0.4) at 80% 100% -->
 ```
 
 ---
@@ -539,7 +517,7 @@ hover:border-red-500
 transition-all duration-300
 
 <!-- Glow effect -->
-absolute inset-0 bg-linear-to-br from-red-500/10 to-transparent blur-xl
+absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent blur-xl
 group-hover:blur-2xl
 transition-all duration-300
 ```
@@ -561,7 +539,6 @@ transition-all duration-300
 ```html
 shadow-lg hover:shadow-xl
 shadow-red-500/25
-shadow-[#D4A017]/25 (gold shadow)
 shadow-emerald-500/25 (CTA shadow)
 ```
 
@@ -571,10 +548,21 @@ group-hover:blur-2xl
 transition-all duration-300
 ```
 
-### Transition Classes
+### Glow Effects (Red)
 ```html
-transition-all duration-300
-transform hover:scale-105 transition-transform duration-500
+<div class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+```
+
+### Hover Patterns (Red)
+```html
+<!-- Red border hover -->
+hover:border-red-500
+
+<!-- Red shadow hover -->
+hover:shadow-2xl hover:shadow-red-500/25
+
+<!-- Combined hover effect -->
+hover:-translate-y-2 hover:shadow-2xl hover:border-red-500 transition-all duration-300
 ```
 
 ---
@@ -605,14 +593,18 @@ rounded-full    <!-- Circular badges, buttons -->
 ## Critical Rules
 
 1. **Scope**: Only apply to index section components (Hero, HeroProducts, Benefits)
-2. **Colors**: Use brand red palette, avoid generic colors
+2. **Colors**: SOLO usar Tailwind native colors (red, amber, emerald, slate, gray), NUNCA hex custom colors
 3. **Animations**: Use fadeInUp/fadeInLeft for entry animations, gradientShift/meshGradient for backgrounds
 4. **WhatsApp**: Always use the provided phone number (526643108937)
 5. **Gradients**: Use linear-to-br for backgrounds, gradient-to-b for sections
 6. **Blur**: Use blur-xl/blur-2xl/blur-3xl for glow effects
 7. **Backdrop**: Use backdrop-blur-sm with semi-transparent backgrounds
 8. **Spacing**: Use py-20 for standard sections, min-h-screen for hero
-9. **Custom Colors**: Use hex values for premium colors (#8B0000, #722F37, #5D1E1E, #D4A017, #B8940F, #9A7800)
-10. **Shadows**: Use shadow-red-500/25 for red glows, shadow-[#D4A017]/25 for gold accents
-11. **Hero Variants**: Choose appropriate Hero variant (TechForward, Premium, Minimalist, Products3DTilt, ProductsHorizontal) based on design needs
-12. **Hover Effects**: Use red border hover (hover:border-red-500) for cards with glow effects
+9. **Mesh Gradient**: Must use exactly 6 layers with specified rgba values and positions
+10. **Shadows**: Use shadow-red-500/25 for red glows, shadow-emerald-500/25 for CTAs
+11. **Hero Variants**: Available variants are TechForward, Products3DTilt, HeroNosotros (Premium, Minimalist, ProductsHorizontal removed)
+12. **Hover Effects**: Use red border hover (hover:border-red-500) with shadow-red-500/25 for cards
+13. **HeroTechForward**: Requires mesh gradient (6 layers) + tech decorative elements (circular borders)
+14. **HeroProducts3DTilt**: Requires perspective-container class + tilt-card with JavaScript tilt effect
+15. **3D Tilt Script**: Include the JavaScript tilt effect script for 3D tilt interactions
+16. **Gradient Text**: Use specific colors (#ef4444, #dc2626, #f59e0b) with 3s animation

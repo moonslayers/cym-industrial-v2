@@ -39,6 +39,7 @@ When performing these actions, ALWAYS invoke the corresponding skill FIRST:
 | Regenerate AGENTS.md Auto-invoke tables (sync.sh) | `skill-sync` |
 | Troubleshoot why a skill is missing from AGENTS.md auto-invoke | `skill-sync` |
 | Working with Tailwind classes | `tailwind-4` |
+| Working with index section UI | `cym-ui` |
 | Writing TypeScript types/interfaces | `typescript` |
 
 ---
