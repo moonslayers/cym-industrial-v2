@@ -31,7 +31,9 @@ When performing these actions, ALWAYS invoke the corresponding skill FIRST:
 
 | Action | Skill |
 |--------|-------|
+| -- | `agent-creator` |
 | After creating/modifying a skill | `skill-sync` |
+| Creating new agents | `agent-creator` |
 | Creating new skills | `skill-creator` |
 | Designing, redesigning, or improving UI interfaces | `frontend-designer` |
 | Regenerate AGENTS.md Auto-invoke tables (sync.sh) | `skill-sync` |
